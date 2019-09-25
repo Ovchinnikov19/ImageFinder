@@ -13,9 +13,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
 
         collectionView.backgroundColor = .orange
-        
-        print("PhotoCollection")
-        
+                
         setupCollectionView()
         setupNavigationBar()
     }
