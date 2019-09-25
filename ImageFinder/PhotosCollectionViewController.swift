@@ -10,14 +10,32 @@ import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
     
+    private lazy var addBarButtonItem: UIBarButtonItem = {
+        return UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addBarButtonTapped))
+    }()
+    
+    private lazy var actionBarButtonItem: UIBarButtonItem = {
+        return UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(actionBarButtonTapped))
+    }()
+    
     override func viewDidLoad() {
-
+        
         collectionView.backgroundColor = .orange
-                
+        
         setupCollectionView()
         setupNavigationBar()
     }
     
+    // MARK: - NavigationItems Action
+    @objc private func addBarButtonTapped() {
+        
+    }
+    
+    @objc private func actionBarButtonTapped() {
+        
+    }
+    
+    // MARK: - Setup UI Elements
     private func setupCollectionView(){
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "CellId")
     }
@@ -29,8 +47,11 @@ class PhotosCollectionViewController: UICollectionViewController {
         titleLabel.textColor = #colorLiteral(red: 0.5019607843, green: 0.4980392157, blue: 0.4980392157, alpha: 1)
         
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
+        
+        navigationItem.rightBarButtonItems = [actionBarButtonItem, addBarButtonItem]
     }
     
+    // MARK: - UICOllectionViewDataSource, UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
