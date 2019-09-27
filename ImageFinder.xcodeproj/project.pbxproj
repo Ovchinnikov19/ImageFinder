@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06454251233D5C9B003DD27F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06454250233D5C9B003DD27F /* NetworkService.swift */; };
 		0660D17F2337CB0300686610 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660D17E2337CB0300686610 /* PhotosCollectionViewController.swift */; };
 		0660D1812337DAE400686610 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D1802337DAE400686610 /* LaunchScreen.storyboard */; };
 		0660D1832337DAFF00686610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D1822337DAFF00686610 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06454250233D5C9B003DD27F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0660D17E2337CB0300686610 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		0660D1802337DAE400686610 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0660D1822337DAFF00686610 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		064E5306233E320700D1C7EB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				06454250233D5C9B003DD27F /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		066A2D5B2337C4E9007B4D9C = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 			children = (
 				066A2D672337C4E9007B4D9C /* AppDelegate.swift */,
 				066A2D692337C4E9007B4D9C /* SceneDelegate.swift */,
+				064E5306233E320700D1C7EB /* Service */,
 				066A2D6B2337C4E9007B4D9C /* ViewController.swift */,
 				0660D1822337DAFF00686610 /* Main.storyboard */,
 				066A2D7D2337C867007B4D9C /* MainTabBarController.swift */,
@@ -148,6 +159,7 @@
 				066A2D682337C4E9007B4D9C /* AppDelegate.swift in Sources */,
 				066A2D7E2337C867007B4D9C /* MainTabBarController.swift in Sources */,
 				0660D17F2337CB0300686610 /* PhotosCollectionViewController.swift in Sources */,
+				06454251233D5C9B003DD27F /* NetworkService.swift in Sources */,
 				066A2D6A2337C4E9007B4D9C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
