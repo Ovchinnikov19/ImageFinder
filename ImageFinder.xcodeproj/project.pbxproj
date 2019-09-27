@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061240AC233E506000C3D939 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061240AB233E506000C3D939 /* NetworkDataFetcher.swift */; };
+		061240AE233E50F800C3D939 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061240AD233E50F800C3D939 /* SearchResults.swift */; };
 		06454251233D5C9B003DD27F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06454250233D5C9B003DD27F /* NetworkService.swift */; };
 		0660D17F2337CB0300686610 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660D17E2337CB0300686610 /* PhotosCollectionViewController.swift */; };
 		0660D1812337DAE400686610 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D1802337DAE400686610 /* LaunchScreen.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		061240AB233E506000C3D939 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		061240AD233E50F800C3D939 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		06454250233D5C9B003DD27F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0660D17E2337CB0300686610 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		0660D1802337DAE400686610 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,10 +47,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061240AF233E511C00C3D939 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				061240AD233E50F800C3D939 /* SearchResults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		064E5306233E320700D1C7EB /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				06454250233D5C9B003DD27F /* NetworkService.swift */,
+				061240AB233E506000C3D939 /* NetworkDataFetcher.swift */,
+				061240AF233E511C00C3D939 /* Models */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -155,11 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061240AC233E506000C3D939 /* NetworkDataFetcher.swift in Sources */,
 				066A2D6C2337C4E9007B4D9C /* ViewController.swift in Sources */,
 				066A2D682337C4E9007B4D9C /* AppDelegate.swift in Sources */,
 				066A2D7E2337C867007B4D9C /* MainTabBarController.swift in Sources */,
 				0660D17F2337CB0300686610 /* PhotosCollectionViewController.swift in Sources */,
 				06454251233D5C9B003DD27F /* NetworkService.swift in Sources */,
+				061240AE233E50F800C3D939 /* SearchResults.swift in Sources */,
 				066A2D6A2337C4E9007B4D9C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
