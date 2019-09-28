@@ -20,19 +20,25 @@ class PhotoCell: UICollectionViewCell {
         return imageView
     }()
     
+    private let photoImageView: UIImageView = {
+           let imageView = UIImageView()
+           imageView.translatesAutoresizingMaskIntoConstraints = false
+           imageView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+           imageView.contentMode = .scaleAspectFit
+           return imageView
+       }()
+    
+    var unsplashPhoto: UnsplashPhoto! {
+        didSet {
+            let photoUrl = unsplashPhoto.urls["regular"]
+        }
+    }
+    
     override var isSelected: Bool {
         didSet {
             updatedSelectedCell()
         }
     }
-    
-    private let photoImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
     
     override func prepareForReuse() {
         super.prepareForReuse()
