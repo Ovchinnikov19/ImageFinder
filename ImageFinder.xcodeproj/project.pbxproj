@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		061240AC233E506000C3D939 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061240AB233E506000C3D939 /* NetworkDataFetcher.swift */; };
 		061240AE233E50F800C3D939 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061240AD233E50F800C3D939 /* SearchResults.swift */; };
+		061240B1233EDA9A00C3D939 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061240B0233EDA9A00C3D939 /* PhotoCell.swift */; };
 		06454251233D5C9B003DD27F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06454250233D5C9B003DD27F /* NetworkService.swift */; };
 		0660D17F2337CB0300686610 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660D17E2337CB0300686610 /* PhotosCollectionViewController.swift */; };
 		0660D1812337DAE400686610 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0660D1802337DAE400686610 /* LaunchScreen.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		061240AB233E506000C3D939 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		061240AD233E50F800C3D939 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		061240B0233EDA9A00C3D939 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		06454250233D5C9B003DD27F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0660D17E2337CB0300686610 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		0660D1802337DAE400686610 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				066A2D6B2337C4E9007B4D9C /* ViewController.swift */,
 				0660D1822337DAFF00686610 /* Main.storyboard */,
 				066A2D7D2337C867007B4D9C /* MainTabBarController.swift */,
+				061240B0233EDA9A00C3D939 /* PhotoCell.swift */,
 				0660D17E2337CB0300686610 /* PhotosCollectionViewController.swift */,
 				0660D1802337DAE400686610 /* LaunchScreen.storyboard */,
 				066A2D702337C4E9007B4D9C /* Assets.xcassets */,
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				061240AC233E506000C3D939 /* NetworkDataFetcher.swift in Sources */,
+				061240B1233EDA9A00C3D939 /* PhotoCell.swift in Sources */,
 				066A2D6C2337C4E9007B4D9C /* ViewController.swift in Sources */,
 				066A2D682337C4E9007B4D9C /* AppDelegate.swift in Sources */,
 				066A2D7E2337C867007B4D9C /* MainTabBarController.swift in Sources */,
