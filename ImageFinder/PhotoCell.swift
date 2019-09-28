@@ -20,6 +20,12 @@ class PhotoCell: UICollectionViewCell {
         return imageView
     }()
     
+    override var isSelected: Bool {
+        didSet {
+            updatedSelectedCell()
+        }
+    }
+    
     private let photoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -28,11 +34,22 @@ class PhotoCell: UICollectionViewCell {
         return imageView
     }()
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        photoImageView.image = nil
+    }
+    
+    private func updatedSelectedCell() {
+        photoImageView.alpha = isSelected ? 0.7 : 1
+        checkMark.alpha = isSelected ? 1 : 0
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        updatedSelectedCell()
         setupPhotoImageView()
-        setupCheckMarkView() 
+        setupCheckMarkView()
     }
     
     private func setupPhotoImageView() {
