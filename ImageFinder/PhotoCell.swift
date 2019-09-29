@@ -14,14 +14,14 @@ class PhotoCell: UICollectionViewCell {
     static let reuseId = "PhotoCell"
     
     private let checkMark: UIImageView = {
-        let image = UIImage(named: "checkmark")
+        let image = UIImage(named: "bird")
         let imageView = UIImageView(image: image)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.alpha = 0
         return imageView
     }()
     
-    private let photoImageView: UIImageView = {
+     let photoImageView: UIImageView = {
            let imageView = UIImageView()
            imageView.translatesAutoresizingMaskIntoConstraints = false
            imageView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
